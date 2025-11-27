@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | CodeBloom</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<header>
+  <h2 class="logo">Code<span>Bloom</span></h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="projects">
+  <h1>My Projects</h1>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="https://mobile-landing-sgir.vercel.app/images/header-phone.png" alt="Mobile Landing Page">
+      <div class="project-info">
+        <h3>📱 Mobile Landing Page</h3>
+        <p>Modern responsive landing page for mobile app promotion.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://hms-sooty-mu.vercel.app/images/home.png" alt="Hospital Management System">
+      <div class="project-info">
+        <h3>🏥 Hospital Management System</h3>
+        <p>Web app for managing hospital operations with admin dashboard.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://th.bing.com/th/id/OIP.Z6F2gcSBhlz1SkuMyGTrGwHaHa?w=180&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Surgical Cotton Website">
+      <div class="project-info">
+        <h3>🩹 Surgical Cotton Website</h3>
+        <p>Business website showcasing products and client inquiries.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/project4.jpg" alt="Photography Website">
+      <div class="project-info">
+        <h3>📸 Photography Website</h3>
+        <p>Creative portfolio site for photographers with gallery slider.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p class="footer-quote">“Turning ideas into code, and code into impact.”</p>
+  <p class="footer-copy">© 2025 CodeBloom | Designed by Aishwarya Mamidwar 💻</p>
+</footer>
+
+
+<script>
+const slider = document.querySelector('.project-slider');
+let scrollAmount = 0;
+setInterval(() => {
+  scrollAmount += 310;
+  if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+    scrollAmount = 0;
+  }
+  slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+}, 2500);
+</script>
+
+</body>
+</html>

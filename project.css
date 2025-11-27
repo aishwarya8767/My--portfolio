@@ -1,0 +1,136 @@
+/* ==========================
+   💠 CODEBLOOM PROJECTS (Modern Blue SaaS Theme)
+========================== */
+
+:root {
+  --primary-bg: #F9FAFB;          /* Clean SaaS background */
+  --secondary-bg: #FFFFFF;        /* Pure white cards */
+  --accent: #6366F1;              /* Indigo (Stripe / Linear style) */
+  --accent-hover: #4F46E5;        /* Darker hover */
+  --text-dark: #0F172A;           /* Deep navy text */
+  --text-light: #1E293B;          /* Body text */
+  --text-muted: #64748B;          /* Muted grey */
+  --shadow: rgba(15, 23, 42, 0.06); /* Very soft shadow */
+}
+
+
+/* ==========================
+   PROJECTS SECTION
+========================== */
+.projects {
+  padding: 4rem 10%;
+  background: var(--primary-bg);
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.projects h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
+}
+
+/* ==========================
+   PROJECT GRID
+========================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+/* ==========================
+   PROJECT CARD
+========================== */
+.project-card {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(96, 165, 250, 0.3);
+}
+
+/* ==========================
+   PROJECT IMAGE
+========================== */
+.project-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 4px solid var(--accent);
+  transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.07);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* ==========================
+   PROJECT INFO TEXT
+========================== */
+.project-info {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-hover);
+  margin-bottom: 0.6rem;
+}
+
+.project-info p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* ==========================
+   VIEW PROJECT BUTTON
+========================== */
+.project-info a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.3rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.project-info a:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 18px rgba(37, 99, 235, 0.4);
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 6%;
+  }
+  
+  .projects h1 {
+    font-size: 2.1rem;
+  }
+  
+  .project-card img {
+    height: 200px;
+  }
+}
