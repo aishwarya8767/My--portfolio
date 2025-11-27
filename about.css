@@ -1,0 +1,241 @@
+/* ========================
+   💠 CODEBLOOM HOME (Modern Blue Theme — FIXED & PROFESSIONAL)
+======================== */
+
+:root {
+  --primary-bg: #F9FAFB;          /* Clean SaaS background */
+  --secondary-bg: #FFFFFF;        /* Pure white cards */
+  --accent: #6366F1;              /* Indigo (Stripe / Linear style) */
+  --accent-hover: #4F46E5;        /* Darker hover */
+  --text-dark: #0F172A;           /* Deep navy text */
+  --text-light: #1E293B;          /* Body text */
+  --text-muted: #64748B;          /* Muted grey */
+  --shadow: rgba(15, 23, 42, 0.06); /* Very soft shadow */
+}
+
+/* ========================
+   GLOBAL STYLING
+======================== */
+body {
+  background: var(--primary-bg);
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 i {
+  color: var(--accent-hover);
+}
+
+p, li {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* ========================
+   CAREER SUMMARY
+======================== */
+.career-summary {
+  background: var(--secondary-bg);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 60px auto 40px;
+  max-width: 900px;
+  box-shadow: 0 4px 25px var(--shadow);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.career-summary:hover {
+  transform: translateY(-5px);
+}
+
+.career-summary p b {
+  color: var(--accent);
+}
+
+/* ========================
+   ABOUT CONTAINER
+======================== */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ========================
+   INFO BOX
+======================== */
+.info-box {
+  background: var(--secondary-bg);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: 0.3s ease;
+}
+
+.info-box:hover {
+  transform: scale(1.02);
+  border-color: var(--accent);
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* ========================
+   EXPERIENCE SECTION
+======================== */
+.experience {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 25px 30px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.exp-item {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+}
+
+.exp-item h3 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.exp-item p {
+  color: var(--text-muted);
+}
+
+.exp-date {
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+/* ========================
+   CERTIFICATIONS
+======================== */
+.certifications {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 25px 30px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.certifications ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.certifications li {
+  background: rgba(99, 102, 241, 0.12);
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.certifications li:hover {
+  background: rgba(99, 102, 241, 0.25);
+}
+
+/* ========================
+   LEARNING JOURNEY
+======================== */
+.learning-path {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 25px 30px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.learning-path b {
+  color: var(--accent);
+}
+
+/* ========================
+   PERSONAL TOUCH
+======================== */
+.personal-touch {
+  background: var(--secondary-bg);
+  border-radius: 16px;
+  padding: 25px 30px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 15px;
+  font-style: italic;
+  color: var(--accent-hover);
+  margin: 15px 0;
+}
+
+/* ========================
+   TECH STACK
+======================== */
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.bubble {
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .info-box, .experience, .certifications, .learning-path, .personal-touch {
+    padding: 20px;
+  }
+}
